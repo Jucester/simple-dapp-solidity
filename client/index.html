@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./styles.css">
+    <title> Cryptospells </title>
+</head>
+<body>
+
+    <div class="container-fluid p-5 bg-dark text-white text-center">
+        <h1> CryptoSpells, the Descentralized App for Wizard, Sorcerers, Witchers, and others. </h1>
+        <p> where you can create spells in the blockchain </p> 
+</div>
+    <div class="container py-5">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-body rounded-0 mb-4 bg-dark text-white">
+                    <h1> Account </h1>
+                    <span> Wallet: </span>
+                    <span id="account"></span>
+
+                </div>
+                <form class="card card-body bg-dark rounded-0" id="spellForm">
+    
+                    <h4 class="text-white"> Create a new spell </h4>
+                    <input name="title" type="text" placeholder="Write a name" class="form-control bg-dark rounded-0 border-1 my-4 text-white" />
+
+                    <textarea name="description" rows="2" class="form-control bg-dark text-white rounded-0 my-4" placeholder="Describe your new spell"></textarea>
+
+                    <input name="power" type="number" class="form-control bg-dark rounedd-0 border-1 my-4 text-white" />
+
+                    <button class="btn btn-primary"> Create! </button>
+    
+                </form>
+            </div>
+            <div class="col-md-8 text-white" id="spellsCointainer"> 
+                
+                <h3 class="text-center my-4"> Spells </h3>
+
+                <div class="" id="spells"></div>
+                
+            
+            </div>
+        </div>
+
+    </div>
+   
+    <script src="/libs/@truffle/contract/dist/truffle-contract.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./ui.js"></script>
+
+</body>
+</html>
